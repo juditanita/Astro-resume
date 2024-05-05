@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets"
+import AboutImg from "../images/aboutImg.png"
+import MainLayout from "../layouts/MainLayout.astro"
+---
+
+<MainLayout>
+    <main class="flex w-full h-auto flex-col items-center justify-center ">
+        <div class="w-full pt-20 mx-auto text-gray-700 text-center">
+          <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg leading-9 tracking-wide">Enthusiast  Coder</h1>
+        </div>
+    
+        <section class=" grid w-full lg:grid-cols-6 md:grid-cols-1 mx-auto  lg:gap-7 md:gap-4 mt-20 mb-30 md:mb-0">
+          <div class=" my-auto py-6 mx-4 md:grid-span-6 lg:col-span-8 w-10/12  md:mx-auto md:text-stretch md:justify-center md:items-center  order-1">
+            <div class="w-full text-center my-4">
+            <!-- <AnimatedText
+              text={"About Me"}
+              classNMHeader="!md:text-5xl !text-3xl font-black text-gray-800 "
+            /> -->
+            </div>
+            <p class="text-dark opacity-80 text-stretch font-medium whitespace-normal ">
+              A certified post gratuade fullstack developer with UI/UX design
+              interest, my passion is to create websites and fully functioning web
+              and mobile applications.
+            </p>
+    
+            <p class="font-semibold pt-4 whitespace-normal">
+              <span class="italic font-bold ">
+              
+                With just 2 years of learning
+              </span>
+              - while creating experience I got involved in more than 8
+              programmming languages, and continuesly evolving toward better user
+              experience.
+            </p>
+            <p class="text-dark opacity-75 text-stretch py-8 font-medium">
+              I believe that technology allows us, to be creative and practical
+              and to help millions of users not only to be able navigate through
+              web applications but to have and engaging web-life with enriched
+              designs.
+            </p>
+          
+          </div>
+          {/*image +info content*/}
+          <div class="lg:col-span-6 relative lg:w-9/12 md:justify-between lg:items-center md:w-10/12 mx-auto flex flex-col md:flex-row sm:flex-col md:order-0 ">
+            <div class="w-full  my-auto relative ">
+              <Image class="h-auto w-full" src={AboutImg}  alt="person " width={300} height={400}/>
+            </div>
+            {/* 3*info content*/}
+            <article class="flex flex-wrap  fsm:lex-row  md:flex-col justify-center items-center mx-auto  gap-2 sm:gap-4  md:pt-8 md:gap-6  ">
+              <!-- <AboutFactSnippets textHeadline={"Projects"} number={5} />
+              <AboutFactSnippets textHeadline={"Experience"} number={2} />
+    
+              <AboutFactSnippets textHeadline={"Courses"} number={10} /> -->
+            </article>
+          </div>
+         
+        </section>
+        {/* scroll animation svg */}
+       
+    
+        <section class="w-full py-6 h-auto mx-20 lg:my-20 flex flex-col ">
+          <div class="mx-auto">
+            
+            <!-- <SubHeader header={"Skills"} /> -->
+        
+        </div>
+          
+    
+        
+          <!-- <Skills/> -->
+        </section>
+    
+        <!-- <section class="my-16">
+          <Experience />
+        </section> -->
+        <!-- <section> <Education classNMHeader="!mb-16" /></section> -->
+    
+       
+    
+        
+      </main>
+</MainLayout>
