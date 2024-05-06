@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.5.10",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.7.1",
+    "boxicons": "^2.1.4",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
