@@ -1,8 +1,11 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import { SITETITLE } from "../constant";
 
-const {title="Judit Szabo Resume"} =Astro.props
+
+const {title} =Astro.props
+const mainTitle=`${SITETITLE} | ${title}` 
 ---
 
 <html lang="en">
@@ -15,7 +18,7 @@ const {title="Judit Szabo Resume"} =Astro.props
         <link rel="stylesheet" href="boxicons.min.css">
         
         <meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{mainTitle}</title>
 	</head>
 	<body class="bg-slate-50">
 
