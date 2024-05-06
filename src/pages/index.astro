@@ -4,100 +4,46 @@ import portfolioPic from "../images/1.png";
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import ButtonAlter from "../components/ButtonAlter.astro";
+import ContactForm from "../components/ContactForm.astro"
+import Hero from "../components/Hero.astro"
+
+
+
 ---
+
+
+
 
 <MainLayout>
   <div class="mb-20 h-full w-full">
-    <div
-      class="h-full relative flex flex-col md:flex-row md:items-center pb-16 mt-6 pt-0  mx-auto"
+<Hero/>
+   <!-- <div
+      class="w-1/6 mr-2 ml-auto -mt-12 fixed bottom-6 left-4 mb-6 animate-bounce"
     >
-      <div class="md:hidden flex-col text-center w-screen text-5xl mt-20 mb-0">
-        {" "}
-        <h1
-          class="font-bold leading-9 drop-shadow-lg text-4xl sm:text-5xl mb-2"
-        >
-          Hi, I am Judit
-        </h1>
-        <!-- <AnimatedText
-			text={'Coding with style'}
-			classNMHeader="!text-base sm:!text-lg !text-gray-600 !font-light"
-		  /> -->
-      </div>
-      {/* IMAGE CONTAINER */}
-      <div class="w-full md:w-1/2 md:h-full h:60 grid place-items-center">
-        <div class="md:w-5/8 relative">
-          <Image
-            src={portfolioPic}
-            alt="coder photo"
-            class="w-11/12 md:w-full h-auto mr-auto scale-85 md:scale-100"
-          />
-        </div>
-      </div>
-
-      {/* TEXT CONTAINER */}
-      <div
-        class="h-60
-		w-full md:w-1/2 flex flex-col md:pl-6 items-start justify-start py-6 sm:py-10 md:justify-center md:items-baseline"
+      <h3>Scroll down</h3>
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        width={50}
+        height={50}
       >
-        {/* TITLE */}
+        <path
+          d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
+          stroke="#000000"
+          stroke-width="1"></path>
+        <path d="M12 6V14" stroke="#000000" stroke-width="1"></path>
+        <path d="M15 11L12 14L9 11" stroke="#000000" stroke-width="1"></path>
+      </svg>
+    </div> -->
 
-        <div class="hidden md:flex flex-col">
-          {" "}
-          <h1
-            class="md:pt-6 md:text-5xl lg:text-6xl font-bold leading-9 drop-shadow-lg"
-          >
-            Hi, I am Judit
-          </h1>
+    <!-- <div class="h-20 w-full bg-slate-400">Technology part</div> -->
+    <!-- <article class="border-2 bg-violet-50  flex justify-center ">
+      
 
-          <!-- <AnimatedText
-			 text={'Coding Creativity into Reality'}
-			  classNMHeader="!text-base sm:!text-lg !text-gray-600 !font-light"
-			/> -->
-        </div>
-
-        {/* DESC */}
-
-        <p
-          class="-mt-8 md:mt-0 whitespace-normal md:w-11/12 tracking-normal text-black opacity-75 w-full pe-6 text-justify leading-7 md:pt-4 pb-4 md:pb-6"
-        >
-          Welcome to my Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Nemo tempore deleniti, maxime perspiciatis nisi sint temporibus!
-          Tempora doloremque, adipisci, fugit ad, nam vel porro ipsa ex
-          consequuntur nulla eligendi culpa?
-        </p>
-        {/* BUTTONS */}
-        <div class="w-full flex gap-4">
-          <Button text={"Contact Me"} />
-        </div>
-      </div>
-	    {/* scroll animation svg */}
-		
-		
-    </div>
-	<div class="w-1/6 mr-2 ml-auto -mt-12 fixed  bottom-6 left-4 mb-6 animate-bounce">
-		<h3>Scroll down </h3>
-		<svg
-		 
-		  viewBox="0 0 24 24"
-		  fill="none"
-		  xmlns="http://www.w3.org/2000/svg"
-		  width={50}
-		  height={50}
-		>
-		  <path
-			d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
-			stroke="#000000"
-			stroke-width="1"
-		  ></path>
-		  <path d="M12 6V14" stroke="#000000" stroke-width="1"></path>
-		  <path d="M15 11L12 14L9 11" stroke="#000000" stroke-width="1"></path>
-		</svg>
-	  </div>
-
-    <div class="h-20 w-full bg-slate-400">Technology part</div>
-    <article class="border-2 bg-violet-50 p-4 flex justify-center ">
-      <div
-        class="my-4  bg-white rounded-tr-2xl hover:rounded-none shadow flex flex-col items-center gap-6 p-8 w-3/4 mx-auto "
+     
+        <div
+        class="my-4 bg-white z-10 rounded-tr-2xl hover:rounded-none shadow flex flex-col items-center gap-6 p-8 w-3/4 mx-auto"
       >
         <p
           class="text-black opacity-60 text-justify font-medium whitespace-normal"
@@ -107,9 +53,17 @@ import ButtonAlter from "../components/ButtonAlter.astro";
           and mobile applications.
         </p>
         <ButtonAlter text={"Learn More"} />
+      
       </div>
-    </article>
-	<div class=" text-8xl uppercase text-gray-300 text-center"> moodboard</div>
-	<div id="contact " class="h-80 nw-full bg-pink-400 flex items-center justify-center">contact form</div>
+    
+    </article> -->
+<!--    
+    <div class="text-8xl uppercase text-gray-300 text-center">moodboard</div> -->
+    <!-- <div
+      id="contact"
+      class=" w-full h-full flex items-center justify-center mb-10"
+    >
+     <ContactForm/>
+    </div> -->
   </div>
 </MainLayout>
