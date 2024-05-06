@@ -1,7 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import { SITETITLE } from "../constant";
+import { SITETITLE,SITE_DESCRIPTION } from "../constant";
 
 
 const {title} =Astro.props
@@ -13,6 +13,7 @@ const mainTitle=`${SITETITLE} | ${title}`
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
+        <meta name="description" content={SITE_DESCRIPTION} />
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
         <link rel="stylesheet" href="boxicons.min.css">
