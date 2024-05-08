@@ -1,0 +1,31 @@
+---
+const {title, name,index}=Astro.props
+interface Props {
+  title: string;
+  name?: string;
+  index:number
+}
+
+
+---
+
+
+
+
+
+
+        
+        <div class="border-b border-gray-200 flex justify-between items-center py-3 w-full px-2" key={index}>
+            <p class="">{title}</p>
+            <p class="">{name}</p>
+           
+        </div>  
+    
+
+ 
+
+
+
+
+
+
