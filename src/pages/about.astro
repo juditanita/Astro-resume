@@ -176,9 +176,9 @@ import DetailsEd from "../components/DetailsEd.astro"
                     </div>
 
                       <div class="bg-slate-100 mx-2 p-2  rounded-xl mb-4 pb-4 ">
-                        {infoData.map(({title,name,index})=>{
+                        {infoData.map(({title,name})=>{
                           return(<InfoCard title={title}
-                          name={name} index={index}/>)
+                          name={name} />)
                         })}
                          
                       
