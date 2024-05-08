@@ -3,17 +3,18 @@ import { Image } from "astro:assets"
 import AboutImg from "../images/1.png"
 import MainLayout from "../layouts/MainLayout.astro"
 import InfoCard from "../components/InfoCard.astro"
-import data from "../data/infoData.js"
+import {infoData,educationData} from "../data/infoData.js"
+import DetailsEd from "../components/DetailsEd.astro"
 ---
 
 <MainLayout title="History"
 >
-<div class="bg-gray-100 p-4">
+<div class=" p-2 mt-4 mb-10">
 
   <div class="border-1 shadow-lg shadow-gray-700 rounded-lg">
 
       <!-- top content -->
-      <div class="flex flex-col gap-10 sm:gap-4 sm:flex-row  rounded-t-lg bg-gradient-to-bl from-fuchsia-600 to-blue-300 sm:px-2 w-full">
+      <div class="flex flex-col gap-6 md:gap-4 md:flex-row  rounded-t-lg bg-gradient-to-bl from-fuchsia-600 to-blue-300 md:px-2 w-full">
      
                     <div class="relative z-40 top-0 left-0">
                       
@@ -97,8 +98,8 @@ import data from "../data/infoData.js"
                     
                    
 
-          <div class=" w-full md:w-2/3 text-white sm:text-center pl-5 mt-10 text-start  flex flex-col items-center justify-center">
-              <p class=" font-bold text-heading text-7xl">
+          <div class="w-full lg:w-2/3 text-white sm:text-center pl-5  text-start  flex flex-col items-center justify-center">
+              <p class=" font-bold text-heading text-center text-5xl lg:text-7xl">
                   Judit Szabo
               </p>
               <p class="text-heading text-3xl mt-2">Full Stack Developer</p>
@@ -107,11 +108,11 @@ import data from "../data/infoData.js"
       </div>
 
       <!-- main content -->
-      <div class="p-5">
+      <div class="p-2 ">
 
-          <div class="flex flex-col sm:flex-row sm:mt-10 gap-4 ">
+          <div class="flex flex-col md:flex-row md:mt-2 gap-4   ">
 
-              <div class="flex flex-col sm:w-1/3  gap-8 ">
+              <div class="flex flex-col md:w-2/5 gap-6  ">
                   <!-- My contact -->
                   <div class="py-3  sm:order-none order-3  bg-white border-2 rounded-xl shadow-md ">
                     <div class=" py-2 w-full pb-4 ">
@@ -145,6 +146,29 @@ import data from "../data/infoData.js"
 
                       </div>
                   </div>
+                  <!--Education part -->
+                   <!-- Info -->
+                   <div class="py-3  sm:order-none order-3  bg-white border-2 rounded-xl shadow-md ">
+                    <div class=" py-2 w-full pb-4 ">
+                      <h2 class=" pl-2 text-lg font-poppins font-bold text-top-color before:content-['•'] before:mr-1  before:text-fuchsia-500 before:text-2xl">Education</h2>
+                    </div>
+
+                      <div class="bg-slate-100 mx-2 p-2  rounded-xl mb-4 pb-4 ">
+                     {educationData.map(({qualification, schoolProvider,timeFrame,address,details})=>
+                    {
+                      return(<DetailsEd qualification={qualification} schoolProvider={schoolProvider} timeFrame={timeFrame} address={address} details={details}/>)
+                    })}
+                      
+                  </div>
+                  
+                    <div class=" py-2 w-full pb-4 ">
+                      <h2 class=" pl-2 text-lg font-poppins font-bold text-top-color before:content-['•'] before:mr-1  before:text-fuchsia-500 before:text-2xl">Courses</h2>
+                    </div>
+                    <div class="bg-slate-100 mx-2 p-2  rounded-xl mb-4 pb-4 text-base">
+                    <p class="text-justify">I am passionate about lifelong learning, I currently do 3 courses on web development from various online platforms. 
+  I have completed many courses on Web developement from Mimo, Codeacademy, Udemy, soloLearn, Scrimba </p>
+                  </div>
+                  </div>
                   <!-- Info -->
                   <div class="py-3  sm:order-none order-3  bg-white border-2 rounded-xl shadow-md ">
                     <div class=" py-2 w-full pb-4 ">
@@ -152,7 +176,7 @@ import data from "../data/infoData.js"
                     </div>
 
                       <div class="bg-slate-100 mx-2 p-2  rounded-xl mb-4 pb-4 ">
-                        {data.map(({title,name,index})=>{
+                        {infoData.map(({title,name,index})=>{
                           return(<InfoCard title={title}
                           name={name} index={index}/>)
                         })}
@@ -170,47 +194,19 @@ import data from "../data/infoData.js"
               </div>
 
 
-              <div class="flex flex-col sm:w-2/3 order-first sm:order-none sm:-mt-10">
+              
+
+              <div class="flex flex-col md:w-3/5 order-first md:order-none md:mt-2">
 
                   <!-- Tab bar -->
-                  <div class="py-3 bg-white shadow-2xl rounded-md w-full justify-between">
-                    <button type="button" class="text-black  bg-slate-200 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Education</button>
-                    <button type="button" class="text-black  bg-slate-200 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Education</button>
-                    <button type="button" class="text-black  bg-slate-200 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Education</button>
-                    
-                      
-                  </div>
+                  
 
                   <!-- Professional Experience -->
                   <div class="py-3">
-                      <h2 class="text-lg font-poppins font-bold text-top-color">Professional Experience</h2>
+                      <h2 class="text-lg font-poppins font-bold text-top-color">Experience</h2>
                       <div class="border-2 w-20 border-top-color my-3"></div>
 
-                      <div class="flex flex-col">
-
-                          <div class="flex flex-col">
-                              <p class="text-lg font-bold text-gray-700">Netcracker Technology | Software Engineer</p>
-                              <p class="font-semibold text-sm text-gray-700">2021 - Present</p>
-                              <p class="font-semibold text-sm text-gray-700 mt-2 mb-1">Key Responsibilities</p>
-                              <ul class="text-sm list-disc pl-4 space-y-1">
-                                  <li>Working on customer facing product</li>
-                                  <li>Deliverying highly efficient solutions</li>
-                                  <li>Solving critical bugs</li>
-                              </ul>
-                          </div>
-
-                          <div class="flex flex-col mt-8">
-                              <p class="text-lg font-bold text-gray-700">TailwindFlex.com | Lead</p>
-                              <p class="font-semibold text-sm text-gray-700">2020-2021</p>
-                              <p class="font-semibold text-sm text-gray-700 mt-2 mb-1">Key Responsibilities</p>
-                              <ul class="text-sm list-disc pl-4 space-y-1">
-                                  <li>Developed usable components</li>
-                                  <li>Solving complex problems</li>
-                                  <li>Solving critical bugs</li>
-                              </ul>
-                          </div>
-
-                      </div>
+                     Experience
 
                   </div>
 

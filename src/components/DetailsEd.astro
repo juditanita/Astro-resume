@@ -1,0 +1,41 @@
+---
+const {qualification, schoolProvider,timeFrame,address,details}=Astro.props
+interface Props {
+  qualification?: string;
+  schoolProvider?: string;
+  timeFrame:string;
+  address:string;
+  details:string;
+}
+---
+
+
+<section class="mt-2 border-b-2 break-inside-avoid pb-4 mb-2 bg-white px-2 ">
+    <header>
+        <h3
+            class="text-lg font-semibold text-gray-700 leading-snugish py-2 "
+        >
+            {qualification} 
+        </h3>
+        <p class="pb-2 flex flex-wrap items-center gap-1 justify-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"></path><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"></path></svg>
+            {timeFrame} </p>
+        <p class="leading-normal  text-md flex flex-wrap gap-1 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M2 7v1l11 4 9-4V7L11 4z"></path><path d="M4 11v4.267c0 1.621 4.001 3.893 9 3.734 4-.126 6.586-1.972 7-3.467.024-.089.037-.178.037-.268V11L13 14l-5-1.667v3.213l-1-.364V12l-3-1z"></path></svg>
+            {schoolProvider}  
+        </p>
+        <p class="leading-normal  text-md flex flex-wrap gap-1 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"></path><path d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z"></path></svg> 
+            {address} 
+        </p>
+       
+    </header>
+    <p class=" text-gray-800 text-base mb-4 text-justify mt-2">
+        {details}
+      
+      
+     
+      
+       
+    </p>
+</section>
