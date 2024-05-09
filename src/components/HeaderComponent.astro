@@ -1,0 +1,13 @@
+
+
+---
+const  {href,name}=Astro.props
+interface Props{
+  href?:string,
+  name:string
+}
+---
+    <li class=" text-center">
+      <a href={href} class="block w-full  text-xl   hover:text-violet-600 hover:font-bold  rounded md:bg-transparent md:text-black md:p-0 mt-2 " >{name}</a>
+    </li>
+    
