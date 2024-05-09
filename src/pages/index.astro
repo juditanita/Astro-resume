@@ -2,10 +2,11 @@
 import { Image } from "astro:assets";
 import portfolioPic from "../images/1.png";
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
-import ButtonAlter from "../components/ButtonAlter.astro";
+
+
 import ContactForm from "../components/ContactForm.astro"
 import Hero from "../components/Hero.astro"
+import MoodBoard from "../components/MoodBoard.astro";
 
 
 
@@ -19,9 +20,12 @@ import Hero from "../components/Hero.astro"
 <Hero/>
  
    
-   <section class="block w-full h-80 border-2 border-gray-300 rounded-xl my-8 relative bg-slate-50">
-    <h3 class=" text-2xl sm:text-4xl md:text-5xl uppercase text-sky-100 bg-fuchsia-600 p-2 lg:px-4 absolute top-12 rounded-l-full right-0 z-100">moodboard</h3> 
-    <div class="h-60  my-12"></div>
+   <section class="block  text-5xl  text-center mt-20 rounded-xl my-8 relative bg-slate-50">
+     MoodBoard
+    
+    <div class=" my-12 mx-auto scale-75">
+      <MoodBoard/>
+    </div>
    </section>
     <div
       id="contact"

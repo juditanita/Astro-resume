@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import portfolioPic from "../images/1.png";
+import shamanicCat from "../images/Shamanic.png"
+import shamanicCard from "../images/shamanic-card.png"
+import cirleText from "../images/circleText.png"
+import featureCard from "../images/feature-card.png"
+import backgroundPng from "../images/backGround.png"
+
+import catsham from "../images/catsham.png"
+import aboutImg from "../images/aboutImg.png"
+import logo from "../images/logoB.png"
+---
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="grid gap-4">
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={portfolioPic} alt="">
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={shamanicCard} alt="">
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={shamanicCat} alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div class="animate-spin-slow">
+            <Image class="h-auto max-w-full rounded-lg" src={cirleText} alt="">
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={featureCard} alt="">
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={aboutImg} alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={backgroundPng} alt="">
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={logo} alt="">
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={catsham} alt="">
+        </div>
+    </div>
+   
+</div>
