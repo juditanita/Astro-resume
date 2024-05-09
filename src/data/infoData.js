@@ -9,7 +9,7 @@ name: ">2 years"
     },
     {
         id:"3",
-        title: "Availibility",
+        title: "Available",
         name: "1 month"
         },
         {

@@ -1,0 +1,51 @@
+---
+const {title, timeFrame,address, details}=Astro.props
+interface Props {
+  title?: string;
+  schoolProvider?: string;
+  timeFrame:string;
+  address:string;
+  details:string;
+}
+---
+
+<article class=" bg-white p-2">
+<header class="">
+    <h3
+    class="text-lg font-semibold text-gray-700 leading-snugish py-2 "
+>
+    {title} 
+    Full Stack Developer
+</h3>
+    <p class="pb-2 flex flex-wrap items-center gap-1 justify-start text-sm leading-normal text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"></path><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"></path></svg>
+        {timeFrame} <!-- {timeFrame}  | {address} -->
+        Jun 2009 &ndash; Dec 2011 </p>
+ 
+    <p class="leading-normal  text-base flex flex-wrap gap-1 items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"></path><path d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z"></path></svg> 
+        {address} 
+        360 Custom Closets and Cabinets
+    </p>
+  </header>
+  <div
+    class=" mt-2 font-normal text-gray-700 text-md leading-snugish"
+  >
+  <span
+  class="text-gray-800 font-semibold "
+> 
+ 
+  Key Responsibilities
+</span>
+    <p class="text-gray-800 text-base mb-4 text-justify">
+     
+      
+      Created high-quality, customized web applications from scratch,
+      employing a diverse set of programming languages, including
+      HTML, CSS, JavaScript, PHP, and Python, to fulfill unique client
+      requirements.
+    </p>
+   
+   
+</div>
+</article>
