@@ -12,19 +12,18 @@ let error=""
     <div class=" flex flex-col md:flex-row lg:max-w-full w-full  py-16 md:py-6 mx-auto section"
         id="contact-form">
      
-        <div class="md:w-1/2 w-full px-8">
+        <div class="md:w-1/2 w-full px-8 flex flex-col justify-center">
             <h1 class="text-4xl text-gray-800 font-bold title-font mb-4">Contact Us</h1>
-            <p class="leading-relaxed text-lg text-gray-900 mt-7 w-3/4">
-                We're here to assist you! If you have any questions or need assistance, please feel free to reach out to
-                us.
+            <p class="leading-relaxed text-lg text-gray-900 mt-7 md:w-3/4">
+                We're here to assist you! If you have any questions or need assistance, please feel free to send message.
               
                 
             </p>
             <p class="leading-relaxed text-base text-gray-900 mt-8">
                 Connect me on social media:
-            </p>
+            </p> 
           
-                <div class=" text-gray-700 opacity-70 flex flex-wrap gap-4 p-4  justify-between w-2/4   "> 
+                <div class=" text-gray-700 opacity-70 flex flex-wrap gap-4 p-4  justify-center w-full   "> 
                  
                   <a href="">
     
@@ -39,34 +38,34 @@ let error=""
                   </div>
            
         </div>
-        <div class="md:w-1/2 md:mr-0 md:ml-auto  w-full mt-10 md:mt-0 px-8  ">
-            <h1 class="text-4xl text-gray-800  font-bold title-font mb-4">Contact Form</h1>
+        <div class="md:w-1/2 md:mr-0 md:ml-auto  w-full mt-10 md:mt-0 sm:px-8 mx-auto ">
+            <!-- <h1 class="text-4xl text-gray-800  font-bold title-font mb-4 ">Contact Form</h1> -->
             <form action="send-contact.php" method="post" id="submit-contact-form">
                 <div class="p-2 w-full">
                     <div class="relative">
                         <label for="name" class="leading-7 py-4 text-lg text-gray-900">Your Name</label>
-                        <input type="text" id="name" name="name" required=""
-                            class="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out ">
+                        <input type="text" id="name" name="name" required placeholder="e.g John Done"
+                            class="w-full placeholder:italic bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out ">
                     </div>
                 </div>
                 <div class="p-2 w-full">
                     <div class="relative">
                         <label for="email" class="leading-7 py-4 text-lg text-gray-900">Your Email</label>
-                        <input type="email" id="email" name="email" required=""
-                            class="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out ">
+                        <input type="email" id="email" name="email" required  placeholder="e.g example@hotmail.co.uk"
+                            class="w-full  placeholder:italic bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out ">
                     </div>
                 </div>
                 <div class="p-2 w-full">
                     <div class="relative">
                         <label for="message" class="leading-7 py-4 text-lg text-gray-900">Your Message</label>
-                        <textarea id="message" name="message" required=""
-                            class="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "></textarea>
+                        <textarea id="message" name="message" required placeholder="Dear Judit..."
+                            class="w-full  placeholder:italic bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "></textarea>
                     </div>
                 </div>
                 <div class="p-2 w-full">
                     <button type="submit"
-                        class=" rounded-full text-white inline-block justify-between bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-purple-300 hover:text-black  text-xl font-bold shadow mx-0 flex-col text-end ">
-                        Send Message
+                        class="rounded-full text-white  bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-purple-300 hover:text-black  text-xl font-bold shadow mx-0 flex-col ">
+                        Send 
                        
                         
                     </button>

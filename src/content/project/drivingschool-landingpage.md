@@ -1,6 +1,6 @@
 ---
 title: "Driway"
-image: "driving1.png"
+image: "drivingreview.png"
 github: "https://github.com/juditanita/driving-school"
 url: "https://driving-instructors.netlify.app"
 tags: ["html", "bootstrap", "css"]

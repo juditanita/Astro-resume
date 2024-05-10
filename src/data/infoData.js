@@ -6,8 +6,8 @@ export const headerData=[
     },
     
     {
-      href:"/portfolio",
-      name:"Portfolio"
+      href:"/projects",
+      name:"Projects"
     },
     {
       href:"/contact",

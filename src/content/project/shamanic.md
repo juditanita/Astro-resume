@@ -1,5 +1,5 @@
 ---
-title: 'Driway'
+title: 'Mystic Tyme'
 image: 'healing.png'
 github: 'https://github.com/juditanita/mysticthyme'
 url: 'https://herbsshopandretreat.netlify.app/'
