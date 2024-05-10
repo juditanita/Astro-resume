@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import logo from "../images/logoB.png"
 import {headerData} from "../data/infoData"
 import HeaderComponent from "../components/HeaderComponent.astro"
+import SearchForm from './SearchForm.astro';
 
 
 ---
@@ -33,7 +34,7 @@ import HeaderComponent from "../components/HeaderComponent.astro"
               <HeaderComponent name={name} href={href}/>
             )
           })}
-        
+        <SearchForm/>
         </ul>
       </div>
     </div>
