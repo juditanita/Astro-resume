@@ -1,6 +1,7 @@
 ---
 
 import type { CollectionEntry } from "astro:content";
+import Tags from "./Tags.astro";
 interface Props {
   project:CollectionEntry<'project'>
 }
@@ -42,7 +43,7 @@ const {project}=Astro.props
         </div>
         
         <h2
-        class="pl-1  text-lg font-poppins font-bold text-top-color hover:scale-105 duration-200 "
+        class="pl-1  text-lg font-poppins font-bold text-top-color hover:scale-115 duration-200 "
       >
         Read More 
       </h2>
@@ -50,24 +51,7 @@ const {project}=Astro.props
 </a>
 
 <!--tags -->
-<div class="flex flex-wrap gap-2 pl-4 mb-2 mt-8">
-              {project.data.tags.map((tag: string, index: number) => {
-                return (
-                  <span
-                    class:list={["w-1/5 py-1  text-center text-white rounded-full hover:opacity-90 text-xs",
-                      index % 2 === 0
-                        ? " bg-amber-500"
-                        : " bg-pink-500"]}
-                    }
-                  
-                  >
-                    
-                    <a href={"/projects/tag/" + tag} class="capitalize">#{tag}</a>
-                  </span>
-                );
-              })}
-            </div>
-
+<Tags tags={project.data.tags}/>
 
 
 </div>
