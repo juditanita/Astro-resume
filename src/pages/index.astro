@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+
 
 import MainLayout from "../layouts/MainLayout.astro";
 
@@ -7,6 +7,15 @@ import MainLayout from "../layouts/MainLayout.astro";
 import ContactForm from "../components/ContactForm.astro"
 import Hero from "../components/Hero.astro"
 import MoodBoard from "../components/MoodBoard.astro";
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
+
+import Tags from "../components/Tags.astro";
+
+const allProjectInfo: CollectionEntry<'project'>[] = (await getCollection('project'))
+
+const firstProject :CollectionEntry<"project">=allProjectInfo[0]
+const secondProject :CollectionEntry<"project">=allProjectInfo[1]
 
 
 
@@ -21,8 +30,82 @@ import MoodBoard from "../components/MoodBoard.astro";
  
    
    <section class="block  text-5xl  text-center mt-20 rounded-xl my-8 relative bg-slate-50">
-     MoodBoard
-    
+     Featured Projects
+
+
+     <!-- Starts component -->
+    <div class="mt-6  pt-12">
+     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-24 items-center ">
+      <div class=" flex flex-col items-start" > 
+       
+       <p class="text-4xl mt-4 tracking-tighter font-semibold text-gray-700 text-balance"> {firstProject.data.title} </p>
+       <p class="text-base  mt-4 text-gray-700 text-balance"> {firstProject.slug} </p>
+
+       <div class="mt-6 text-xs font-medium grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-2 text-gray-950">
+      
+      <a  href={firstProject.data.url}>
+      <div class="flex items-center ">
+        <div class="bg-violet-200 p-1 rounded-full hover:ring-4 hover:ring-violet-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"  style=" transform: ;msFilter:;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path></svg>
+        </div>
+        
+        <h2
+        class="pl-1  text-base font-poppins font-bold text-top-color hover:scale-115 duration-200 "
+      >
+        Live Demo
+      </h2>
+    </div>
+  </a>
+        
+       
+       </div>
+      </div>
+      <div class="h-full md:order-first"> 
+        <div class=" relative  bg-slate-400 p-2 "> 
+          <img class=" bg-gray-200 shadow-box shadow-gray-500/30 overflow-scroll aspect-square  w-full  object-cover object-center " src={"/Website-img/" +firstProject.data.image} alt={firstProject.data.title}/>
+        </div>
+         </div>
+        
+     </div>
+     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-24 items-center md:flex-row-reverse pt-12 md:pt-0">
+      <div class=" flex flex-col items-start md:items-end"> 
+        
+       
+       <p class="text-4xl mt-8 tracking-tighter font-semibold text-gray-700 text-balance"> {secondProject.data.title}</p>
+       <p class="text-base  mt-4 text-gray-700 text-balance"> {secondProject.slug} </p>
+       <div class="mt-6 text-xs font-medium grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-2 text-gray-950">
+        <a  href={firstProject.data.url}>
+          <div class="flex items-center ">
+            <div class="bg-violet-200 p-1 rounded-full hover:ring-4 hover:ring-violet-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"  style=" transform: ;msFilter:;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path></svg>
+            </div>
+            
+            <h2
+            class="pl-1  text-base font-poppins font-bold text-top-color hover:scale-115 duration-200 "
+          >
+            Live Demo
+          </h2>
+        </div>
+      </a>
+      
+       
+       
+       </div>
+      </div>
+      <div class=" relative   bg-slate-400 p-2  "> 
+        <img class=" bg-gray-200 shadow-box shadow-gray-500/30 overflow-hidden aspect-square  w-full  object-cover object-center " src={"/Website-img/" +secondProject.data.image} alt={secondProject.data.title}/>
+        
+       </div>
+     </div>
+    </div> <!-- Ends component -->
+
+
+
+
+
+
+
+
     <div class=" my-12 mx-auto scale-75">
       <MoodBoard/>
     </div>

@@ -4,7 +4,7 @@ image: "drivingreview.png"
 github: "https://github.com/juditanita/driving-school"
 url: "https://driving-instructors.netlify.app"
 tags: ["html", "bootstrap", "css"]
-slug: driving-school-landing-page
+slug: Driving School Landing page
 ---
 
 ##**Project Overview**:
@@ -19,5 +19,5 @@ Technology Stack
 
 -Front-end:Bootstrap and minimal css
 
-Limitation:
-\*Email is not yet implemented
+####Limitation:
+Email function is not yet implemented
