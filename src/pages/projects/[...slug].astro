@@ -7,10 +7,15 @@ const {slug}=Astro.params
 if(slug === undefined){
     throw new Error("Slug required")
 }
-const entry=getEntry('project',slug)
+const entry= await getEntry('project',slug)
 if(entry===undefined){
     return Astro.redirect('/404')
 }
+
+const {Content} =await entry.render()
+
+
+
 
 ---
 <!-- change to ssr rendering -->
