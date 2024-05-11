@@ -7,17 +7,28 @@ tags: ["html", "bootstrap", "css"]
 slug: Driving School Landing page
 ---
 
-##**Project Overview**:
-*Driway* is a fully responsive designed landing page, with engaging features cards. With a focus on real-world impact.
 
-#Objectives
+## Project Overview
 
-1.Develop a user-friendly web and mobile landing page that shows features and process, teams and plans.
-2.Utilize bootstrap style to create a clear easy to see through information page.
+__Driway__ is a fully responsive designed landing page, with engaging features cards. With a . 
 
-Technology Stack
+## Objectives
 
--Front-end:Bootstrap and minimal css
+   1. Develop a user-friendly web and mobile landing page that shows features and process, teams and plans.   
 
-####Limitation:
-Email function is not yet implemented
+   2. Focus on real-world impact.    
+
+   3. Utilize bootstrap style to create a clear easy to see through information page.     
+
+ 
+
+
+
+
+
+
+
+
+
+
+  

@@ -4,24 +4,26 @@ image: 'healing.png'
 github: 'https://github.com/juditanita/mysticthyme'
 url: 'https://herbsshopandretreat.netlify.app/'
 tags: ['react', 'tailwind','miragejs']
-slug: shamanic-shop-and-webshop-website
+slug: Shamanic 
+
+
+
 
 ---
-##**Project Overview**:
-*The healing herb shop and More* is a fully responsive designed webshop with multiple admin possibilites. Herbshop encourages shops  to cohibit with small business owner who creates retreat while also allows user to buy product through the website.
 
 
-#Objectives
+## Project Overview
 
-1.Helps business to list their retreat through online shops.
-2.Develop a beautifully designed user-friendly web and mobile website.
-2.Utilize tailwind,canva for style in combination with react and corrently miragejs.
-
-Technology Stack
-
--Front-end:React, Tailwind, Canva
+__Mystic Thyme__ is a fully responsive designed webshop with multiple admin possibilites,
+ encourages shops  to cohibit with small business owner who creates retreat while also allows user to buy product through the website.
 
 
-Limitation:
-*Email is not yet implemented
-*Miragejs is not safe for authentication
+## Objectives
+
+   1. Develop a beautifully designed shopify-themed user-friendly web and mobile website.   
+
+   2. Helps business to list their retreat through online shops.    
+
+   3. Utilize canva for designing logo and other elements, styling with tailwind using react and corrently miragejs.  
+
+
