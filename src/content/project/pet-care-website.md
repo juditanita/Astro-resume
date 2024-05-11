@@ -4,7 +4,7 @@ image: 'petcare.png'
 github: 'https://github.com/juditanita/petCare/tree/master'
 url: 'https://pets-cares-1.netlify.app/'
 tags: ['html', 'css','js']
-slug: Petcare Landing Page
+slug: Pet Care Landing Page
 
 ---
 ##**Project Overview**:
