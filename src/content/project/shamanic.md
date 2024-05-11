@@ -4,17 +4,14 @@ image: 'healing.png'
 github: 'https://github.com/juditanita/mysticthyme'
 url: 'https://herbsshopandretreat.netlify.app/'
 tags: ['react', 'tailwind','miragejs']
-slug: Shamanic 
-
-
-
+slug: Mystic Shamanic Webshop
 
 ---
 
 
 ## Project Overview
 
-__Mystic Thyme__ is a fully responsive designed webshop with multiple admin possibilites,
+__Mystic__ is a fully responsive designed webshop with multiple admin possibilites,
  encourages shops  to cohibit with small business owner who creates retreat while also allows user to buy product through the website.
 
 

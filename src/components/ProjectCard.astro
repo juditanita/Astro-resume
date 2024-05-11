@@ -27,17 +27,18 @@ const {project}=Astro.props
         
     </div>
 
-
-    <div class="relative my-2 h-[500px] overflow-scroll border-2 border-white  rounded-xl">
+    <a href={"/projects/"+ project.slug}>
+    <div class="relative my-2 h-[500px] overflow-scroll border-2 border-white scrollbar scrollbar-thumb-amber-400 scrollbar-track-fuchsia-300 scroll  overflow-y-scroll  rounded-xl">
        
-          <a href={"/projects/"+ project.slug}>
+          
           
             <img class="w-full rounded-xl shadow object-fit hover:opacity-75 transition duration-300 ease-in-out" src={"/Website-img/" +project.data.image} alt={project.data.title}/>
-        </a>
+       
       
 
        
     </div>
+  </a>
  
     
     <a href={"/projects/"+ project.slug}>
