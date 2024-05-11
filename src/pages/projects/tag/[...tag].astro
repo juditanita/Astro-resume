@@ -1,0 +1,32 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+import ProjectCard from "../../../components/ProjectCard.astro"
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const allProjectInfo: CollectionEntry<"project">[] = (await getCollection("project"))
+---
+
+<MainLayout>
+    <section class="pb-8">
+        <div class="py-8 mb-12">
+            <h1 class="flex justify-center text-3xl md:text-5xl font-bold">
+                All Projects
+            </h1>
+        </div>
+       
+    
+      
+        <div class="grid grid-cols-1 gap-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3 mb-12  overflow-hidden">
+             
+    
+            {allProjectInfo.map(project=>{
+    
+                return(
+    
+    <ProjectCard project={project}/>
+                )
+            })}
+        </div>
+    </section>
+    </MainLayout>
