@@ -15,9 +15,10 @@ interface Props {
       return (
         <span
           class:list={["px-3 py-1  text-center text-white rounded-full hover:opacity-90 text-xs hover:shadow-md ",
-            tag.includes("bootstrap")
-              ? " bg-blue-500"
-              : " bg-violet-500"]}
+            tag.includes("bootstrap")?
+              " bg-blue-500" :
+              tag.includes("tailwind") || tag.includes("astro") || tag.includes("react")? "bg-indigo-500"
+              : " bg-amber-600"]}
           }
         
         >

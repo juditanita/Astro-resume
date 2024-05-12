@@ -9,18 +9,27 @@ import ProjectCard from "../../components/ProjectCard.astro"
 
 const allProjectInfo: CollectionEntry<'project'>[] = (await getCollection('project'))
 
+const tags: string[] = allProjectInfo.flatMap((project: any) => project.data.tags);
+
+const uniqueTags: string[] = [...new Set(tags)];
+
+
+
 
 
 
 ---
 <MainLayout title="Judit Szabo Projects & Snippets">
 <section class="pb-8">
-    <div class="py-8 mb-12">
+    <div class="py-4 mb-12">
         <h1 class="flex justify-center text-3xl md:text-5xl font-bold">
             Recent Projects
         </h1>
     </div>
-   
+   <div class="mb-12 flex mx-auto justify-around flex-wrap gap-4 ">{uniqueTags.map(tag=>(
+    <button class="px-3 py-1 bg-black   text-white shadow-md rounded-xl"> <a href={'/articles/tag/' + tag}>{(tag)}</a>  </button>
+    
+   ))}</div>
 
   
     <div class="grid grid-cols-1 gap-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3 mb-12  overflow-hidden">
