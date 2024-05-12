@@ -30,7 +30,7 @@ export const infoData = [
   {
     id: '3',
     title: 'Available',
-    name: '1 month',
+    name: '2 weeks',
   },
   {
     id: '4',
@@ -92,3 +92,5 @@ export const experienceData = [
     details: ' Demonstrated deep expertise in the products or services, providing customers with informed recommendations and advice.',
   },
 ];
+
+export const skillTabs=["Astro", "React", "Html5", "Css3", "Javascript", "Java", "Python", "Php", "Bootstrap", "NodeJs", "Express"];

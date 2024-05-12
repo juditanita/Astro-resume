@@ -3,7 +3,7 @@ title: "Judit Portfolio"
 image: "healing.png"
 github: ""
 url: ""
-tags: ["astro", "tailwind", "markdown"]
+tags: ["astro", "tailwind-css", "markdown","css3", "html5","javascript"]
 slug: Judit Portfolio
 ---
 

@@ -26,18 +26,10 @@ const {project}=Astro.props
 
         
     </div>
-
-    <a href={"/projects/"+ project.slug}>
-    <div class="relative my-2 h-[500px] overflow-scroll border-2 border-white scrollbar scrollbar-thumb-indigo-50 scrollbar-track-fuchsia-300 scroll  overflow-y-scroll  rounded-xl">
-       
-          
-          
-            <img class="w-full rounded-xl shadow object-fit hover:opacity-75 transition duration-300 ease-in-out" src={"/Website-img/" +project.data.image} alt={project.data.title}/>
-       
-      
-
-       
-    </div>
+<a href={"/projects/"+ project.slug}>
+  <div class="relative my-2 h-[500px] overflow-scroll border-2 border-white scrollbar scrollbar-thumb-indigo-50 scrollbar-track-fuchsia-300 scroll  overflow-y-scroll  rounded-xl">
+        <img class="w-full rounded-xl shadow object-fit hover:opacity-75 transition duration-300 ease-in-out" src={"/Website-img/" +project.data.image} alt={project.data.title}/>
+       </div>
   </a>
  
     
@@ -56,7 +48,8 @@ const {project}=Astro.props
 </a>
 
 <!--tags -->
-<Tags tags={project.data.tags}/>
+
+<Tags tags={project.data.tags.slice(0,3)}/>
 
 
 </div>

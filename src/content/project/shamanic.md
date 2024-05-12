@@ -3,7 +3,7 @@ title: 'Mystic Tyme'
 image: 'healing.png'
 github: 'https://github.com/juditanita/mysticthyme'
 url: 'https://herbsshopandretreat.netlify.app/'
-tags: ['react', 'tailwind','miragejs']
+tags: ['react', 'tailwind-css','miragejs']
 slug: Mystic Shamanic Webshop
 
 ---

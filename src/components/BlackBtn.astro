@@ -1,9 +1,10 @@
 ---
- const {info}=Astro.props
+ const {info, letterSize}=Astro.props
  interface Props{
-    info:string
+    info: string
+    letterSize: string
  }
 
  ---
 
- <button class="bg-black p-2 py-1 rounded-lg shadow text-violet-50 drop-shadow-md text-xs">#{info}</button>
+ <button class=`bg-black p-2 py-1 rounded-lg shadow text-violet-50 drop-shadow-md ${letterSize}`>{info}</button>

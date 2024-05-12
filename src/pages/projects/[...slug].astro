@@ -15,10 +15,8 @@ if(entry===undefined){
 
 const {Content} =await entry.render()
 
-
-
-
 ---
+
 <!-- change to ssr rendering -->
 <MainLayout>
     <div class="mt-4">
@@ -41,6 +39,7 @@ const {Content} =await entry.render()
                     <div class="">
                       
                       <Tags tags={entry.data.tags}/>
+                      
                       <p>  
                         <a href={entry.data.url} target="_blank" class="underline">Live Demo
                     

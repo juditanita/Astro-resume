@@ -1,41 +1,60 @@
-
 ---
-
-
 import MainLayout from "../../layouts/MainLayout.astro";
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from "astro:content";
 import ProjectCard from "../../components/ProjectCard.astro"
+import Pagination from "../../components/Pagination.astro"
+import BlackBtn from "../../components/BlackBtn.astro"
 
+
+
+import {PROJECT_PER_PAGE} from"../../constant.ts"
+
+const currentPage: number | null = +Astro.url.searchParams.get('page')! || 1;
+
+
+//get all pages
 const allProjectInfo: CollectionEntry<'project'>[] = (await getCollection('project'))
 
+
+//total pages in the page
+const totalPages: number = Math.ceil(allProjectInfo.length / PROJECT_PER_PAGE);
+console.log(totalPages)
+
+const projectPerPage: CollectionEntry<'project'>[] = allProjectInfo.slice((currentPage - 1) * PROJECT_PER_PAGE, currentPage * PROJECT_PER_PAGE);
+ console.log(projectPerPage.length)
+//unique tags 
 const tags: string[] = allProjectInfo.flatMap((project: any) => project.data.tags);
 
 const uniqueTags: string[] = [...new Set(tags)];
 
-
-
-
-
-
 ---
 <MainLayout title="Judit Szabo Projects & Snippets">
-<section class="pb-8">
-    <div class="py-4 mb-12">
-        <h1 class="flex justify-center text-3xl md:text-5xl font-bold">
+<section class="pb-8  mt-12 h-full">
+    <div class="p-4  my-20">
+        <h1 class="flex justify-center text-3xl md:text-5xl font-bold drop-shadow-md">
             Recent Projects
         </h1>
+       
     </div>
-   <div class="mb-12 flex mx-auto justify-around flex-wrap gap-4 ">{uniqueTags.map(tag=>(
-    <button class="px-3 py-1 bg-black   text-white shadow-md rounded-xl"> <a href={'/articles/tag/' + tag}>{(tag)}</a>  </button>
+<div class=" w-10/12 flex items-center flex-wrap p-2 justify-center mx-auto mb-6">{uniqueTags.map(tag=>(
+    <a href={'/projects/tag/' + tag}>
+   <button type="button">
+            <span
+                class="bg-indigo-50 inline-flex text-primary py-0.5 px-3 items-center justify-between text-sm capitalize border border-1 border-slate-200 rounded-full hover:bg-black hover:text-white mb-2 mr-2">
+                <i class= {"bx bxl-" +tag.toLowerCase()} ></i>
+                
+                    <span  class="capitalize lg:inline leading-5 ml-1">
+                    {tag}</span></span>
+        </button>
+    
+        </a> 
     
    ))}</div>
-
-  
-    <div class="grid grid-cols-1 gap-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3 mb-12  overflow-hidden">
+<div class="grid grid-cols-1 gap-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3 mb-12  overflow-hidden">
          
 
-        {allProjectInfo.map(project=>{
+        {projectPerPage.map(project=>{
 
             return(
 
@@ -43,5 +62,12 @@ const uniqueTags: string[] = [...new Set(tags)];
             )
         })}
     </div>
+    <Pagination 
+    currentPage={currentPage} 
+    totalPages={totalPages}
+ disablePrevious={currentPage === 1} 
+  disableNext={currentPage === totalPages}
+    />
 </section>
+
 </MainLayout>

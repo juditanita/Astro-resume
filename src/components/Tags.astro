@@ -9,15 +9,16 @@ interface Props {
 
 <!--tags -->
 <div class="flex flex-wrap gap-2  mb-2 mt-8">
-    {tags.map((tag: string, index: number) => {
+    {tags.map((tag: string) => {
 
 
       return (
         <span
           class:list={["px-3 py-1  text-center text-white rounded-full hover:opacity-90 text-xs hover:shadow-md ",
-            tag.includes("bootstrap")?
+            tag.includes("bootstrap") ||  tag.includes("tailwind")  ?
               " bg-blue-500" :
-              tag.includes("tailwind") || tag.includes("astro") || tag.includes("react")? "bg-indigo-500"
+             tag.includes("astro") || tag.includes("react")? "bg-indigo-500":
+              tag.includes("js")?"bg-yellow-400 !text-black"
               : " bg-amber-600"]}
           }
         

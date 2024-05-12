@@ -3,7 +3,7 @@ title: "Driway"
 image: "drivingreview.png"
 github: "https://github.com/juditanita/driving-school"
 url: "https://driving-instructors.netlify.app"
-tags: ["html", "bootstrap", "css"]
+tags: ["html5", "bootstrap", "css3"]
 slug: Driving School Landing page
 ---
 

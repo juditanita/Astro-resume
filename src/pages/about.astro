@@ -8,6 +8,7 @@ import DetailsEd from "../components/DetailsEd.astro";
 import Experience from "../components/Experience.astro";
 import AboutHeaders from "../components/AboutHeaders.astro";
 import BlackBtn from "../components/BlackBtn.astro";
+const lettersize="text-xs"
 ---
 
 <MainLayout title="History">
@@ -15,7 +16,7 @@ import BlackBtn from "../components/BlackBtn.astro";
     <div class=" rounded-lg">
       <!-- top content -->
       <div
-        class="flex flex-col gap-6 md:gap-4 md:flex-row rounded-t-lg bg-gradient-to-bl from-fuchsia-600 to-blue-300 md:px-2 w-full"
+        class="flex flex-col gap-6 md:gap-4 md:flex-row bg-gradient-to-tl from-amber-400 to-fuchsia-400 md:px-2 w-full"
       >
         <div class="relative  top-0 left-0 p-2  flex justify-center">
           <div
@@ -142,7 +143,7 @@ import BlackBtn from "../components/BlackBtn.astro";
 
               <div class="py-2 w-full pb-4 break-inside-avoid">
                 <h2
-                  class="pl-4 text-lg font-poppins font-bold underline underline-offset-6 decoration-violet-200"
+                  class="pl-4 text-lg font-poppins font-bold underline underline-offset-6 decoration-slate-50"
                 >
                   Related Courses
                 </h2>
@@ -157,10 +158,10 @@ import BlackBtn from "../components/BlackBtn.astro";
                   
                 </p>
                 <div class="flex gap-2 flex-wrap mt-3"> 
-                  <BlackBtn info="Scrimba"/>
+                  <BlackBtn info="Scrimba" letterSize={lettersize}/>
                   
-                  <BlackBtn info="Udemy"/>
-                  <BlackBtn info="Codecademy"/></div>
+                  <BlackBtn info="Udemy" letterSize={lettersize}/>
+                  <BlackBtn info="Codecademy" letterSize={lettersize}/></div>
                
               
               </div>

@@ -3,14 +3,9 @@ import { Image } from 'astro:assets';
 import logo from "../images/logoB.png"
 import {headerData} from "../data/infoData"
 import HeaderComponent from "../components/HeaderComponent.astro"
-import SearchForm from './SearchForm.astro';
-
 
 ---
-
-
-
-<nav class="bg-slate-50 border-gray-200 dark:bg-gray-900 px-8 ">
+<nav class=" pb-12 px-8 navbar">
     <div class="w-full flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
      <Image src={logo} width={60 } height={60} alt="logo"/>
@@ -24,9 +19,9 @@ import SearchForm from './SearchForm.astro';
       </button>
       <div class="hidden w-full md:block md:w-auto " id="navbar-default">
         <ul class="font-medium flex flex-col  items-end md:items-start p-4 md:p-0 mt-4 rounded-lg   md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
-          <li class=" text-center">
+          <li class=" text-center ml-2">
 
-            <a href="/" class="block w-full  text-xl  hover:text-violet-600 hover:font-bold  rounded md:bg-transparent md:text-black md:p-0 mt-2"  aria-current="page">Home</a>
+            <a href="/" class="block w-full  text-xl  hover:font-bold  rounded md:bg-transparent md:text-black md:p-0 mt-2"  aria-current="page">Home</a>
           </li>
 
           {headerData.map(({href,name})=>{
@@ -34,9 +29,25 @@ import SearchForm from './SearchForm.astro';
               <HeaderComponent name={name} href={href}/>
             )
           })}
-        <SearchForm/>
+        
+       
         </ul>
       </div>
     </div>
   </nav>
+
+
+
+<style is:global>
+
+  .active{
+  color:white;
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 2px 2px 0 #fbbf24;
+  font-size: 110%;
+  padding: 6px 3px;
+  margin-right: 6px;
+
+  }
   

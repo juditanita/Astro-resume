@@ -3,7 +3,7 @@ title: 'Petim'
 image: 'petcare.png'
 github: 'https://github.com/juditanita/petCare/'
 url: 'https://pets-cares-1.netlify.app/'
-tags: ['html', 'css','js']
+tags: ['html5', 'css3','javascript']
 slug: Pet Care Landing Page
 
 ---
