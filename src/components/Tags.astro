@@ -10,11 +10,13 @@ interface Props {
 <!--tags -->
 <div class="flex flex-wrap gap-2  mb-2 mt-8">
     {tags.map((tag: string, index: number) => {
+
+
       return (
         <span
           class:list={["px-3 py-1  text-center text-white rounded-full hover:opacity-90 text-xs hover:shadow-md ",
-            index % 2 === 0
-              ? " bg-amber-500"
+            tag.includes("bootstrap")
+              ? " bg-blue-500"
               : " bg-violet-500"]}
           }
         

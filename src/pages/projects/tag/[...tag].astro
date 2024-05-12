@@ -3,15 +3,21 @@ import MainLayout from "../../../layouts/MainLayout.astro";
 import ProjectCard from "../../../components/ProjectCard.astro"
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
+const { tag } = Astro.params;
+
+if(tag === undefined) {
+  throw new Error('Tag is required');
+}
 
 const allProjectInfo: CollectionEntry<"project">[] = (await getCollection("project"))
+const tagProject = allProjectInfo.filter(project => project.data.tags.includes(tag));
 ---
 
 <MainLayout>
     <section class="pb-8">
         <div class="py-8 mb-12">
-            <h1 class="flex justify-center text-3xl md:text-5xl font-bold">
-                All Projects
+            <h1 class="flex justify-center text-3xl md:text-5xl font-bold capitalize">
+                All {tag} projects
             </h1>
         </div>
        
@@ -20,7 +26,7 @@ const allProjectInfo: CollectionEntry<"project">[] = (await getCollection("proje
         <div class="grid grid-cols-1 gap-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3 mb-12  overflow-hidden">
              
     
-            {allProjectInfo.map(project=>{
+            {tagProject.map(project=>{
     
                 return(
     
