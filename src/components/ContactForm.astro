@@ -1,6 +1,14 @@
 ---
 import Button from "./Button.astro"
-let error=""
+// import emailjs from "@emailjs/browser";
+
+// const serviceId=import.meta.env.ASTRO_SERVICE_ID
+
+
+// const publicKey =import.meta.env.PUBLIC_KEY
+
+// const templateId=import.meta.env.TEMPLATE_ID
+
 
 
 ---
@@ -47,11 +55,11 @@ let error=""
         </div>
         <div class="md:w-1/2 md:mr-0 md:ml-auto  w-full mt-10 md:mt-0 sm:px-8 mx-auto ">
             <!-- <h1 class="text-4xl text-gray-800  font-bold title-font mb-4 ">Contact Form</h1> -->
-            <form action="send-contact.php" method="post" id="submit-form"  autocomplete="off">
+            <form action="https://formsubmit.co/75964b37f23ceaa6891eaf3f6f175ba1" method="POST" id="submit-form"  autocomplete="off">
                 <div class="p-2 w-full">
                     <div class="relative">
                         <label for="name" class="leading-7 py-4 text-lg text-gray-900">Your Name</label>
-                        <input type="text" id="from_name"
+                        <input type="text" id="name"
                         name="from_name"
                         placeholder="What's your name?"
                         required
@@ -71,6 +79,10 @@ let error=""
                         <textarea id="message" name="message" required placeholder="Type here..."
                             class="w-full  placeholder:italic bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "></textarea>
                     </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_template" value="box">
                 </div>
                 <div class="p-2 w-full">
                     <button type="submit" id="btn-sending"
@@ -101,3 +113,4 @@ let error=""
   margin-right: 4px;
   
     }
+    </style>

@@ -13,20 +13,20 @@ interface Props {
 
 
       return (
-        <span
-          class:list={["px-3 py-1  text-center text-white rounded-full hover:opacity-90 text-xs hover:shadow-md ",
-            tag.includes("bootstrap") ||  tag.includes("tailwind")  ?
-              " bg-blue-500" :
-             tag.includes("astro") || tag.includes("react")? "bg-indigo-500":
-              tag.includes("js")?"bg-yellow-400 !text-black"
-              : " bg-amber-600"]}
-          }
-        
-        >
-            
-          
-          <a href={"/projects/tag/" + tag} class="capitalize">#{tag}</a>
-        </span>
+
+
+
+       <a href={'/projects/tag/' + tag}>
+   <button type="button">
+            <span
+                class=" bg-indigo-200 inline-flex text-primary py-[5px] px-2 items-center justify-between  text-sm capitalize border border-1 border-violet-300 rounded-full hover:bg-black hover:text-white mb-2 mr-2">
+                <i class= {"bx bxl-" +tag.toLowerCase()} ></i>
+                
+                    <span  class="capitalize lg:inline leading-5 ml-1">
+                    {tag}</span></span>
+        </button>
+    
+        </a> 
       );
     })}
   </div>
