@@ -41,7 +41,7 @@ const uniqueTags: string[] = [...new Set(tags)];
     <a href={'/projects/tag/' + tag}>
    <button type="button">
             <span
-                class="bg-indigo-50 inline-flex text-primary py-0.5 px-3 items-center justify-between text-sm capitalize border border-1 border-slate-200 rounded-full hover:bg-black hover:text-white mb-2 mr-2">
+                class=" bg-indigo-50 inline-flex text-primary py-0.5 px-3 items-center justify-between text-sm capitalize border border-1 border-slate-200 rounded-full hover:bg-black hover:text-white mb-2 mr-2">
                 <i class= {"bx bxl-" +tag.toLowerCase()} ></i>
                 
                     <span  class="capitalize lg:inline leading-5 ml-1">
@@ -51,7 +51,7 @@ const uniqueTags: string[] = [...new Set(tags)];
         </a> 
     
    ))}</div>
-<div class="grid grid-cols-1 gap-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3 mb-12  overflow-hidden">
+<div class="grid grid-cols-1 gap-12 md:grid-cols-2 w-10/12 my-12  place-items-center mx-auto  ">
          
 
         {projectPerPage.map(project=>{
@@ -71,3 +71,10 @@ const uniqueTags: string[] = [...new Set(tags)];
 </section>
 
 </MainLayout>
+
+
+<style is:global>
+
+
+
+
