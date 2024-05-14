@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 
 import portfolioPhoto from "../images/aboutImg.png";
 import AboutHeaders from "./AboutHeaders.astro";
+import '@fontsource/cedarville-cursive';
 ---
 
 <section
@@ -13,21 +14,22 @@ import AboutHeaders from "./AboutHeaders.astro";
       <div class=" pt-6  flex flex-col pl-6 gap-4">
         <span class="relative inline-block">
           <span
-            class="absolute inline-block w-2/6 leading-8 bottom-0.5 h-2 left-30 bg-violet-100 "
+            class="absolute inline-block w-2/6 leading-8 bottom-0.5 h-2 left-0 lg:left-60 bg-violet-100 "
           ></span>
 
          
           <h1
-            class="font-medium leading-loose  text-gray-700  md:text-5xl "
+            class="font-medium leading-loose  text-gray-700 text-5xl "
           >
             Welcome to
 <br/>
 
 
-            <span class="drop-shadow-md ml-2  text-6xl text-indigo-400">Judit's
-              <br>
-              Portfolio.</span>
+            
           </h1>
+          <span class="drop-shadow-md ml-2  text-6xl text-indigo-400 p-8">Judit's
+            
+            Portfolio.</span>
         </span>
 
         
@@ -35,7 +37,7 @@ import AboutHeaders from "./AboutHeaders.astro";
         <p class="leading-loose text-lg text-gray-900   md:w-3/4  text-justify py-8 font-normal">
           I believe that technology allows us, to be creative and practical and
           to help millions of users not only to be able navigate through web
-          applications but to have and engaging web-life with enriched designs.
+          applications but to have and engaging weblife with enriched designs.
         </p> 
 
       
@@ -80,3 +82,12 @@ import AboutHeaders from "./AboutHeaders.astro";
     </div>
   </div>
 </section>
+
+
+<style is:global>
+  h1 + span{
+    font-family: 'Lora Variable', serif;
+    line-height:2.5rem;
+   
+  }
+  </style>
