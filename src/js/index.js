@@ -1,7 +1,7 @@
 //navbar active link
 
 
-const nav = document.querySelector("#navbar-default");
+const nav = document.getElementById("navbar-default");
 const navLinks = nav.querySelectorAll("a");
 const currentURL = window.location.href;
 navLinks.forEach((link) => {
@@ -13,7 +13,7 @@ navLinks.forEach((link) => {
 
 //see contact model
 
-const openModelBtn=document.querySelector("#contactModel");
+const openModelBtn = document.querySelector("#contactModel");
 const modelBox=document.querySelector("#contactFormModal");
 const closeModelBtn =document.querySelector("#closeContactForm");
 

@@ -93,4 +93,4 @@ export const experienceData = [
   },
 ];
 
-export const skillTabs=["Astro","Tailwind","React", "Html5", "Css3", "Javascript", "Java", "Python", "Php", "Bootstrap", "NodeJs", "Express"];
+export const skillTabs=["Astro","Tailwind","React", "Html5", "Css3", "Javascript", "Java", "Python", "Php", "Bootstrap", "NodeJs", "Express","Sass","Jquery"];
