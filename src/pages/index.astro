@@ -1,23 +1,23 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import ContactForm from "../components/ContactForm.astro"
+// import ContactForm from "../components/ContactForm.astro"
 import Hero from "../components/Hero.astro"
-import SkillCard from "../components/SkillCard.astro"
-import AboutHeaders from "../components/AboutHeaders.astro"
+// import SkillCard from "../components/SkillCard.astro"
+// import AboutHeaders from "../components/AboutHeaders.astro"
 
 import { Image } from "astro:assets";
 import logo from "../images/logoB.png"
 
-import catsham from "../images/catsham.png"
+ import catsham from "../images/catsham.png"
 
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from "astro:content";
 
-import Tags from "../components/Tags.astro";
+// import Tags from "../components/Tags.astro";
 
 const allProjectInfo: CollectionEntry<'project'>[] = (await getCollection('project'))
 
-const firstProject :CollectionEntry<"project">=allProjectInfo[3]
+const firstProject :CollectionEntry<"project">=allProjectInfo[4]
 
 ---
 

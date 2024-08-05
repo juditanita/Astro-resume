@@ -1,8 +1,8 @@
 ---
 title: 'Todo App saves on Local Storage'
-image: ''
-github: 'https://github.com/juditanita'
-url: ''
+image: 'todoapp.png'
+github: 'https://github.com/juditanita/class-todo'
+url: 'https://todoandweathermusic.netlify.app/'
 tags: ['javascipt', 'api']
 slug: Todo-App
 
@@ -18,10 +18,10 @@ The todo app also displays the current weather with icons and user can get a ran
 
 ## Objectives
 
-   1. With the stylish background created on canva user can have a simple 3 functionalities todo app.   
+   1. With the stylish background created on canva user can have a simple  functionalities todo app with javascript class.   
 
-   2. Get current information on the weather.    
+   2. Implement current information on the weather.    
 
-   3. Get random song according to the weather that user syncronise themselves with rythoms, lyrics rather than the occasional burden of the weather.  
+   3. Get random song according to the weather that user syncronise themselves with rhydm, lyrics rather than the occasional burden of the weather.  
 
 

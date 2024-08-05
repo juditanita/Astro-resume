@@ -1,10 +1,10 @@
 ---
 title: 'Rifvy'
-image: ''
-github: 'https://github.com/juditanita'
-url: ''
+image: 'Flower-cake.png'
+github: 'https://github.com/juditanita/cake-with-sass---jquery/settings'
+url: 'https://flower-cake.netlify.app/'
 tags: ['jquery', 'sass']
-slug: Bakery landing page
+slug: Cake landing page
 
 ---
 
