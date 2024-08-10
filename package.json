@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/tailwind": "^5.1.0",
-    "@astrojs/vercel": "^7.6.0",
+    "@astrojs/vercel": "^7.7.2",
     "@emailjs/browser": "^4.3.3",
     "@fontsource-variable/cinzel": "^5.0.13",
     "@fontsource-variable/lora": "^5.0.18",
