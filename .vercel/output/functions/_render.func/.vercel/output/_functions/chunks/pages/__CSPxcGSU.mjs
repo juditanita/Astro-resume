@@ -246,7 +246,7 @@ const collectionToEntryMap = createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"project":{"type":"content","entries":{"Judit Portfolio":"/src/content/project/portfolio-website.md","Driving School Landing page":"/src/content/project/drivingschool-landingpage.md","Pet Care Landing Page":"/src/content/project/pet-care-website.md","Mystic Shamanic Webshop":"/src/content/project/shamanic.md","Cake landing page":"/src/content/project/rifvy.md","Todo-App":"/src/content/project/todo-app.md"}}};
+lookupMap = {"project":{"type":"content","entries":{"Driving School Landing page":"/src/content/project/drivingschool-landingpage.md","Pet Care Landing Page":"/src/content/project/pet-care-website.md","Judit Portfolio":"/src/content/project/portfolio-website.md","Mystic Shamanic Webshop":"/src/content/project/shamanic.md","Cake landing page":"/src/content/project/rifvy.md","Todo-App":"/src/content/project/todo-app.md"}}};
 
 function createGlobLookup(glob) {
 	return async (collection, lookupId) => {

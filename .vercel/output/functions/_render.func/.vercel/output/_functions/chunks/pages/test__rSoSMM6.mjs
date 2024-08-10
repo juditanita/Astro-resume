@@ -2,7 +2,7 @@
 import { e as createComponent, r as renderTemplate, m as maybeRenderHead, i as renderComponent } from '../astro_B5-HWYXN.mjs';
 import 'kleur/colors';
 import { a as $$Image } from './404_CGrLQ2EQ.mjs';
-import { p as portfolioPhoto } from './index_5_jY00u2.mjs';
+import { p as portfolioPhoto } from './index_CUqeHboS.mjs';
 
 const $$Test = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="flex flex-col md:flex-row   md:mt-12"> <div class="w-full md:w-3/4 flex flex-col justify-center gap-3 "> <p class="font-semibold pt-4 whitespace-normal text-justify"> <span class="italic font-bold ">

@@ -2,8 +2,8 @@
 import { e as createComponent, r as renderTemplate, m as maybeRenderHead, g as addAttribute, h as createAstro, i as renderComponent } from '../astro_B5-HWYXN.mjs';
 import 'kleur/colors';
 import { P as PROJECT_PER_PAGE, $ as $$MainLayout, a as $$Image, l as logo } from './404_CGrLQ2EQ.mjs';
-import { g as getCollection } from './__Do7eh75X.mjs';
-import { $ as $$ProjectCard } from './__B7OyTnF7.mjs';
+import { g as getCollection } from './__CSPxcGSU.mjs';
+import { $ as $$ProjectCard } from './__CSeKfkpW.mjs';
 import 'clsx';
 /* empty css                          */
 /* empty css                          */

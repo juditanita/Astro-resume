@@ -2,7 +2,7 @@
 import { e as createComponent, r as renderTemplate, m as maybeRenderHead, g as addAttribute, i as renderComponent, h as createAstro } from '../astro_B5-HWYXN.mjs';
 import 'kleur/colors';
 import { $ as $$MainLayout } from './404_CGrLQ2EQ.mjs';
-import { $ as $$Tags, g as getCollection } from './__Do7eh75X.mjs';
+import { $ as $$Tags, g as getCollection } from './__CSPxcGSU.mjs';
 
 const $$Astro$1 = createAstro();
 const $$ProjectCard = createComponent(($$result, $$props, $$slots) => {
