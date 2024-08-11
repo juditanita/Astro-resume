@@ -12,7 +12,7 @@ import { experienceData } from '../data/infoData';
 
 <div >{experienceData.map(({title,timeFrame,address, details})=>(
   
-    <article class="  p-2  border-b-4 border-slate-50 pb-4 last:border-transparent">
+    <article class="  p-2   pb-4  last:border-transparent bg-white rounded-lg shadow-sm mb-6">
  <header>
      <h3
      class="text-xl font-poppins font-semibold text-black leading-snugish py-2 "
@@ -31,13 +31,13 @@ import { experienceData } from '../data/infoData';
    <div
     class=" mt-2 font-normal text-gray-700 text-md leading-snugish"
   >
-  <span
-  class="text-gray-800 font-semibold "
+  <h3
+  class="text-gray-800 font-semibold pt-4"
  > 
  
    Key Responsibilities
- </span>
-    <p class="text-gray-800 text-base mb-4 text-justify mt-2">
+ </h3>
+    <p class="text-black font-light text-base mb-8 text-justify mt-2 mr-2">
      {details}
       
     

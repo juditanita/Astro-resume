@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 
 import portfolioPhoto from "../images/aboutImg.png";
 
+// import { Icon } from 'astro-icon/components'
+
 import '@fontsource/cedarville-cursive';
 ---
 
@@ -27,14 +29,14 @@ import '@fontsource/cedarville-cursive';
 
             
           </h1>
-          <span class="drop-shadow-md ml-2  text-6xl text-indigo-400 p-8">Judit's
+          <span class="drop-shadow-md ml-2  text-6xl text-indigo-400 p-8 px-0">Judit's
             
             Portfolio.</span>
         </span>
 
         
 
-        <p class="leading-loose text-lg text-gray-900   md:w-3/4  whitespace-normal text-justify py-8 font-normal">
+        <p class="leading-loose text-lg text-gray-900 text-wrap   md:w-3/4  whitespace-normal text-justify py-8 font-normal">
           I believe that technology allows us, to be creative and practical and
           to help millions of users not only to be able navigate through web
           applications but to have and engaging weblife with enriched designs.
@@ -71,9 +73,10 @@ import '@fontsource/cedarville-cursive';
         title=""
         class="transition-all duration-200 text-violet-200 w-full inline-block ml-8">
         <button
-          class="px-3 py-2 rounded-full bg-slate-900 text-white hidden sm:inline-block hover:bg-violet-600"
+          class="px-3 py-2  rounded-full bg-slate-900 text-white hidden sm:flex gap-2 hover:bg-violet-600"
         >
-          Contact me 🡭
+          Contact me  
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
         </button></a
           >
         
